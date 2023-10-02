@@ -60,7 +60,7 @@ chrome.runtime.onMessage.addListener(async (message) => {
 
       if (response.ok) {
         alert("Video successfully uploaded.");
-        chrome.tabs.create({ url: `https://help-me-out-web-hazel.vercel.app/${videoName}` });
+        chrome.tabs.create({ url: `https://help-me-out-web-hazel.vercel.app/upload/${videoName}` });
       } else {
         console.error("Error uploading video:", response.statusText);
         console.log("error");
