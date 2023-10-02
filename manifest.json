@@ -1,0 +1,25 @@
+{
+  "name": "Help me out ext",
+  "description": "Minimal example for recording any screen/window in manifest V3, allowing redirection on current tab",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action":{
+    "default_popup":"popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches":["<all_urls>"],
+      "css": ["style.css"],
+      "js":["content.js"]
+    }
+  ],
+  "permissions": ["tabs", "activeTab", "desktopCapture"],
+  "icons" : {
+    "16": "icon32.png",
+    "32": "icon32.png",
+    "48": "icon32.png"
+}
+}

@@ -1,0 +1,165 @@
+
+
+.container {
+  font-family: 'Montserrat', sans-serif;
+  padding: 12px;
+  min-width: 300px;
+  border-radius: 50px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex ;
+  align-items: center;
+  gap: 1px;
+}
+
+.logo_text {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.head_btn {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.text_center {
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* Add your CSS styles here */
+
+.text-color {
+  color: #000; /* Adjust color as needed */
+}
+
+.description {
+  color: #777;
+  text-align: center;
+}
+
+/* Replace these with your icon images or use font icons */
+.settings-icon { 
+  cursor: pointer;
+ }
+.close-icon {
+  cursor: pointer;
+}
+.fullscreen-icon { background-image: url('fullscreen-icon.png'); }
+.current-tab-icon { background-image: url('current-tab-icon.png'); }
+.camera-icon { background-image: url('camera-icon.png'); }
+.microphone-icon { background-image: url('microphone-icon.png'); }
+
+/* Add your styling for the switch and other elements */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Add your other styles as needed */
+.recording-btn {
+  background-color: #FF5722; /* Adjust color as needed */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.full_copy {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon_copy_full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.flex-per {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.permissions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.settings-item {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  padding: 12px;
+  border-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#startRecordingButton {
+  width: 100%;
+  padding: 16px;
+  margin-top: 12px;
+  border-radius: 10px;
+  background: rgba(18, 11, 72, 1);
+  border: rgba(18, 11, 72, 1);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Add more styles for other elements if required */
